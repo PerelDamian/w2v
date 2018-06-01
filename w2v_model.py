@@ -83,7 +83,7 @@ class Word2VecModel:
 
     def LearnParamsUsingSGD(self, learning_params, logs_dir, use_test=True):
         fn = logs_dir + '/' + "training_ll" + '.log'
-        logging.basicConfig(filename=fn, level=logging.DEBUG)
+        logging.basicConfig(filename=fn, level=logging.INFO)
 
         begin_time = time()
         for iter_ind in np.arange(learning_params.n_iterations):
@@ -99,7 +99,7 @@ class Word2VecModel:
                 test_mean_ll = self.data_mean_ll(self.data.test, max_pairs=20000)
                 train_mean_ll = self.data_mean_ll(self.data.train, max_pairs=20000)
                 print('{}. Batch mean LL: {}, Test mean LL: {}'.format(iter_ind, train_mean_ll, test_mean_ll))
-                logging.debug('{}. Batch mean LL: {}, Test mean LL: {}'.format(iter_ind, train_mean_ll, test_mean_ll))
+                logging.info('{}. Batch mean LL: {}, Test mean LL: {}'.format(iter_ind, train_mean_ll, test_mean_ll))
                 self.training_scores['test_ll'].append(test_mean_ll)
                 self.training_scores['train_ll'].append(train_mean_ll)
                 self.training_scores['iters_ll'].append(iter_ind)

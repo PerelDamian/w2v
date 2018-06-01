@@ -41,11 +41,13 @@ if __name__ == "__main__":
 
     model.LearnParamsUsingSGD(sgd_params, logs_dir=logs_dir, use_test=True)
 
+    fn = logs_dir + '/' + "training_ll" + '.log'
+    logging.basicConfig(filename=fn, level=logging.INFO)
     # logging.basicConfig(filename=logs_dir + '/' + 'final_log.log', level=logging.INFO)
 
     # Save final scores to file
 
-    logging('\n\n\n')
+    logging.info('\n\n\n')
     logging.info('Learning Rate: {}'.format(args.lr))
     logging.info('Window Size: {}'.format(args.window_size))
     logging.info('Batch Size: {}'.format(args.batch_size))
