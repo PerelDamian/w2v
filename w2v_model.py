@@ -48,7 +48,6 @@ class Word2VecModel:
                                 }
 
     def get_gradient(self, context_ind, input_ind, k_neg_sam_ind):
-        # ToDo - Check
         Vc = self.v[context_ind]
         Ui = self.u[input_ind]
         neg_vecs = self.v[k_neg_sam_ind]
@@ -82,11 +81,9 @@ class Word2VecModel:
             self.v[context_ind] = l2_normalize(self.v[context_ind], axis=1)
             self.v[k_neg_sam_ind] = l2_normalize(self.v[k_neg_sam_ind], axis=1)
 
-    def LearnParamsUsingSGD(self, learning_params, use_test=True):
-        fn = strftime("logs/%Y-%m-%d %H:%M:%S", gmtime()) + '_' + pprint.pformat(learning_params) + '.log'
-        logging.basicConfig(filename=fn, level=logging.INFO)
-        logging.info('ll')
-        logging.info('ll')
+    def LearnParamsUsingSGD(self, learning_params, logs_dir, use_test=True):
+        fn = logs_dir + '/' + "training_ll" + '.log'
+        logging.basicConfig(filename=fn, level=logging.DEBUG)
 
         begin_time = time()
         for iter_ind in np.arange(learning_params.n_iterations):
@@ -102,7 +99,7 @@ class Word2VecModel:
                 test_mean_ll = self.data_mean_ll(self.data.test, max_pairs=20000)
                 train_mean_ll = self.data_mean_ll(self.data.train, max_pairs=20000)
                 print('{}. Batch mean LL: {}, Test mean LL: {}'.format(iter_ind, train_mean_ll, test_mean_ll))
-                logging.info('{}. Batch mean LL: {}, Test mean LL: {}'.format(iter_ind, train_mean_ll, test_mean_ll))
+                logging.debug('{}. Batch mean LL: {}, Test mean LL: {}'.format(iter_ind, train_mean_ll, test_mean_ll))
                 self.training_scores['test_ll'].append(test_mean_ll)
                 self.training_scores['train_ll'].append(train_mean_ll)
                 self.training_scores['iters_ll'].append(iter_ind)

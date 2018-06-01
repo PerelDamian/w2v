@@ -3,12 +3,12 @@ from matplotlib import pyplot as plt
 
 
 def top_k_words_from_ll_values(model, lst, k):
-    top_k_indexes = np.argsort(lst)[:k]
+    top_k_indexes = np.argsort(lst)[:k+1]
 
-    top_k_words = [model.data.ind2word[ind] for ind in top_k_indexes if ind != 0]
+    top_k_words = [model.data.ind2word[ind] for ind in top_k_indexes[:k] if ind != 0]
 
     if len(top_k_words) < k:  # case <unk> is one of the top words
-        top_k_words.append(model.ind2word_map[top_k_indexes[k]])
+        top_k_words.append(model.data.ind2word[top_k_indexes[k]])
 
     return top_k_words
 
@@ -26,37 +26,43 @@ def most_likely_cotext_words(model, input_word, k):
 def most_likely_input_words(model, context_words, k):
     likelihood = np.zeros(model.u.shape[0])
 
-    ll_denoninators = np.sum(np.exp(model.u.dot(model.v)), axis=1)
-    for context_word in context_words:
-        context_word_ind = model.data.word2ind.get(context_word, 0)
+    for i, Ui in enumerate(model.u):
+        for context_word in context_words:
+            context_word_ind = model.data.word2ind.get(context_word, 0)
 
-        Vc = model.v[context_word_ind]
+            Vc = model.v[context_word_ind]
 
-        ll_nominators = np.exp(np.sum(model.u * Vc, axis=1))
+            ll_nominators = np.exp(np.sum(Ui * Vc))
+            ll_denoninators = np.sum(np.exp(Ui.dot(model.v.T)))
 
-        likelihood += np.log(ll_nominators / ll_denoninators)
+            likelihood += np.log(ll_nominators / ll_denoninators)
 
     return top_k_words_from_ll_values(model, likelihood, k)
 
 
-def top_k_analogy_solver(model, a, b, c, k):
+def top_k_analogy_solver(model, a, b, c, k, emb='input'):
     """
     returns top k i from argmax(Ui * (Ua-Ub+Uc))
     example a=man, b=woman, c=king. expected to return queen
     """
-    a_ind = model.word2ind_map.get(a, 0)
-    b_ind = model.word2ind_map.get(b, 0)
-    c_ind = model.word2ind_map(c, 0)
+    a_ind = model.data.word2ind.get(a, 0)
+    b_ind = model.data.word2ind.get(b, 0)
+    c_ind = model.data.word2ind.get(c, 0)
 
-    expected_vec = model.u[a_ind] + model.u[b_ind] - model.u[c_ind]
+    if emb == 'context':
+        mat = model.v
+    else:
+        mat = model.u
 
-    likelihood = np.sum(model.u * expected_vec, axis=1)
+    expected_vec = mat[a_ind] + mat[b_ind] - mat[c_ind]
+
+    likelihood = np.sum(mat * expected_vec, axis=1)
 
     return top_k_words_from_ll_values(model, likelihood, k)
 
 
 def visualize_words_first_2_components(model, words, filename):
-    words_inds = [model.word2ind_map.get(word, 0) for word in words]
+    words_inds = [model.data.word2ind.get(word, 0) for word in words]
 
     words_vecs = model.u[words_inds]
 
