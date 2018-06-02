@@ -3,12 +3,12 @@ from matplotlib import pyplot as plt
 
 
 def top_k_words_from_ll_values(model, lst, k):
-    top_k_indexes = np.argsort(lst)[:k+1]
+    top_k_indexes = np.argsort(lst)[-k-1:]
 
-    top_k_words = [model.data.ind2word[ind] for ind in top_k_indexes[:k] if ind != 0]
+    top_k_words = [model.data.ind2word[ind] for ind in top_k_indexes[1:] if ind != 0]
 
     if len(top_k_words) < k:  # case <unk> is one of the top words
-        top_k_words.append(model.data.ind2word[top_k_indexes[k]])
+        top_k_words.append(model.data.ind2word[top_k_indexes[0]])
 
     return top_k_words
 
@@ -35,7 +35,7 @@ def most_likely_input_words(model, context_words, k):
             ll_nominators = np.exp(np.sum(Ui * Vc))
             ll_denoninators = np.sum(np.exp(Ui.dot(model.v.T)))
 
-            likelihood += np.log(ll_nominators / ll_denoninators)
+            likelihood[i] += np.log(ll_nominators / ll_denoninators)
 
     return top_k_words_from_ll_values(model, likelihood, k)
 

@@ -60,8 +60,8 @@ if __name__ == "__main__":
     logging.info('Training Time: {}, \nFinal Train LL: {}, \nFinal Test LL: {}, \n\n'.format(model.training_scores['training_time'],
                                                                                              model.training_scores['train_ll'][-1],
                                                                                              model.training_scores['test_ll'][-1]))
-    logging.info('\n\n\nContext words from input word:')
 
+    logging.info('\n\n\nContext words from input word:')
     logging.info('Top 10 Conetxt words for the input word "good" are: ' + str(evaluation.most_likely_cotext_words(model, 'good', 10)))
     logging.info('Top 10 Conetxt words for the input word "bad" are: ' + str(evaluation.most_likely_cotext_words(model, 'bad', 10)))
     logging.info('Top 10 Conetxt words for the input word "lame" are: ' + str(evaluation.most_likely_cotext_words(model, 'lame', 10)))
