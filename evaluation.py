@@ -10,7 +10,7 @@ def top_k_words_from_ll_values(model, lst, k):
     if len(top_k_words) < k:  # case <unk> is one of the top words
         top_k_words.append(model.data.ind2word[top_k_indexes[0]])
 
-    return top_k_words
+    return list(reversed(top_k_words))
 
 
 def most_likely_cotext_words(model, input_word, k):
@@ -69,10 +69,13 @@ def visualize_words_first_2_components(model, words, filename):
     words_vecs = words_vecs[:, :2]
 
     plt.figure()
+    plt.xlabel('1st dim')
+    plt.ylabel('2nd dim')
+    plt.title('First 2 components embedding')
     plt.scatter(words_vecs[:, 0], words_vecs[:, 1])
     for i, word in enumerate(words):
         plt.text(words_vecs[i, 0], words_vecs[i, 1], word)
-    plt.savefig(r'visualizations/' + filename)
+    plt.savefig(filename)
 
 
 

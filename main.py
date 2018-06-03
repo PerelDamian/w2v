@@ -68,15 +68,17 @@ if __name__ == "__main__":
     plt.legend(loc='best')
     plt.savefig(logs_dir + '/' + 'Train_plot.png')
 
-    # Deliverabel 2 and are calculated seperately after running this script with different values
+    # Deliverabel 2 and 3 are calculated seperately after running this script with different values
 
-    # Deliverable 4
+    # Deliverable 4.1
     logging.info('\n\n\nContext words from input word:')
     logging.info('Top 10 Conetxt words for the input word "good" are: ' + str(evaluation.most_likely_cotext_words(model, 'good', 10)))
     logging.info('Top 10 Conetxt words for the input word "bad" are: ' + str(evaluation.most_likely_cotext_words(model, 'bad', 10)))
     logging.info('Top 10 Conetxt words for the input word "lame" are: ' + str(evaluation.most_likely_cotext_words(model, 'lame', 10)))
     logging.info('Top 10 Conetxt words for the input word "cool" are: ' + str(evaluation.most_likely_cotext_words(model, 'cool', 10)))
     logging.info('Top 10 Conetxt words for the input word "exciting" are: ' + str(evaluation.most_likely_cotext_words(model, 'exciting', 10)))
+    # Deliverable 4.1 (plot with first 2 components)
+    evaluation.visualize_words_first_2_components(model, ['good', 'bad', 'lame', 'cool', 'exciting'], logs_dir+'/2dim_embedding.png')
 
     # Deliverable 5
     logging.info('\n\n\nInput word from context words:')
