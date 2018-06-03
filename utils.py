@@ -14,7 +14,7 @@ def l2_normalize(v, axis=1):
 
 
 def get_noise_dist(data, alpha):
-    unigram_counts = dict(Counter([word for sntnce in data for word in sntnce]))
+    unigram_counts = dict(Counter(word for sentence in data for word in sentence))
 
     for word in unigram_counts:
         unigram_counts[word] = unigram_counts[word] ** alpha

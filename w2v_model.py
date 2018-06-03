@@ -61,7 +61,7 @@ class Word2VecModel:
         dVc = (1 - sigmoid(np.sum(Vc * Ui))) * Ui
 
         # grad by neg vecs
-        dV_neg = sigmoid(np.sum(Ui * neg_vecs, axis=1))[:, None] * Ui / K
+        dV_neg = -sigmoid(np.sum(Ui * neg_vecs, axis=1))[:, None] * Ui / K
 
         return dUi, dVc, dV_neg
 

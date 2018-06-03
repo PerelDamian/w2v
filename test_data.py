@@ -14,6 +14,6 @@ def test_sentence_splitter():
     assert spltr.get_set_from_sentence_index(8263) == 2
     assert spltr.get_set_from_sentence_index(8200) == 1
     assert spltr.get_set_from_sentence_index(7443) == 3
-    assert all([type(ind) == int for ind in spltr.train_indexes])
-    assert all([type(ind) == int for ind in spltr.test_indexes])
-    assert all([type(ind) == int for ind in spltr.val_indexes])
+    assert all([type(ind) == int for ind in spltr.train_indices])
+    assert all([type(ind) == int for ind in spltr.test_indices])
+    assert all([type(ind) == int for ind in spltr.val_indices])
