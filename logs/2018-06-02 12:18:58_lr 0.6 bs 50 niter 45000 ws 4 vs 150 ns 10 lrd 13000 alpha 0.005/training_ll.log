@@ -1,0 +1,136 @@
+INFO:root:0. Batch mean LL: -9.627934019091466, Test mean LL: -9.628982125090047
+INFO:root:500. Batch mean LL: -9.615006624276752, Test mean LL: -9.618391015326964
+INFO:root:1000. Batch mean LL: -9.602836895949402, Test mean LL: -9.607704909131224
+INFO:root:1500. Batch mean LL: -9.59070302191661, Test mean LL: -9.595966524920746
+INFO:root:2000. Batch mean LL: -9.578289374022598, Test mean LL: -9.58339324488167
+INFO:root:2500. Batch mean LL: -9.56512495328505, Test mean LL: -9.570348178745
+INFO:root:3000. Batch mean LL: -9.551947201512242, Test mean LL: -9.557379633546603
+INFO:root:3500. Batch mean LL: -9.53924984723744, Test mean LL: -9.544858163292457
+INFO:root:4000. Batch mean LL: -9.526630229414895, Test mean LL: -9.532417645036253
+INFO:root:4500. Batch mean LL: -9.514692711895384, Test mean LL: -9.520874635133303
+INFO:root:5000. Batch mean LL: -9.503870900887962, Test mean LL: -9.510384132666923
+INFO:root:5500. Batch mean LL: -9.493430866037617, Test mean LL: -9.500553144864234
+INFO:root:6000. Batch mean LL: -9.483457838501204, Test mean LL: -9.490651355535745
+INFO:root:6500. Batch mean LL: -9.473871243622018, Test mean LL: -9.481644317673508
+INFO:root:7000. Batch mean LL: -9.464646184789586, Test mean LL: -9.473289714845533
+INFO:root:7500. Batch mean LL: -9.45611502219963, Test mean LL: -9.465417593735612
+INFO:root:8000. Batch mean LL: -9.447966254149534, Test mean LL: -9.457846870983655
+INFO:root:8500. Batch mean LL: -9.440821645647926, Test mean LL: -9.450938444687363
+INFO:root:9000. Batch mean LL: -9.433800198221752, Test mean LL: -9.444815143654042
+INFO:root:9500. Batch mean LL: -9.427501549632622, Test mean LL: -9.438958149417626
+INFO:root:10000. Batch mean LL: -9.421734858428204, Test mean LL: -9.433768432634167
+INFO:root:10500. Batch mean LL: -9.416147514882612, Test mean LL: -9.428736987981596
+INFO:root:11000. Batch mean LL: -9.411229352830663, Test mean LL: -9.42423686954351
+INFO:root:11500. Batch mean LL: -9.406626396827061, Test mean LL: -9.41999245423426
+INFO:root:12000. Batch mean LL: -9.40223058411238, Test mean LL: -9.41609594985646
+INFO:root:12500. Batch mean LL: -9.398342017048757, Test mean LL: -9.412634408390495
+INFO:root:13000. Batch mean LL: -9.395013191572776, Test mean LL: -9.409570391056366
+INFO:root:13500. Batch mean LL: -9.393200265595528, Test mean LL: -9.40799965793322
+INFO:root:14000. Batch mean LL: -9.391621456552622, Test mean LL: -9.406618459114892
+INFO:root:14500. Batch mean LL: -9.390107420711972, Test mean LL: -9.405342136733616
+INFO:root:15000. Batch mean LL: -9.388661879794467, Test mean LL: -9.404103913177465
+INFO:root:15500. Batch mean LL: -9.387220820593297, Test mean LL: -9.402905347430709
+INFO:root:16000. Batch mean LL: -9.385882594586011, Test mean LL: -9.401842565621184
+INFO:root:16500. Batch mean LL: -9.384717090174, Test mean LL: -9.400874137305493
+INFO:root:17000. Batch mean LL: -9.383579728681383, Test mean LL: -9.400066112950467
+INFO:root:17500. Batch mean LL: -9.382439130266647, Test mean LL: -9.399310248897038
+INFO:root:18000. Batch mean LL: -9.381249912106195, Test mean LL: -9.39832798476168
+INFO:root:18500. Batch mean LL: -9.3803011049031, Test mean LL: -9.397608061002456
+INFO:root:19000. Batch mean LL: -9.37931272518412, Test mean LL: -9.396838170266593
+INFO:root:19500. Batch mean LL: -9.378460882096538, Test mean LL: -9.396141268716981
+INFO:root:20000. Batch mean LL: -9.37766889257418, Test mean LL: -9.39544976594633
+INFO:root:20500. Batch mean LL: -9.376927583647008, Test mean LL: -9.39499581176354
+INFO:root:21000. Batch mean LL: -9.376248843107781, Test mean LL: -9.394452571916068
+INFO:root:21500. Batch mean LL: -9.375650247587334, Test mean LL: -9.393958608706734
+INFO:root:22000. Batch mean LL: -9.375051630462636, Test mean LL: -9.393670919438373
+INFO:root:22500. Batch mean LL: -9.374528154188829, Test mean LL: -9.393286075553837
+INFO:root:23000. Batch mean LL: -9.374071667741998, Test mean LL: -9.393065868961868
+INFO:root:23500. Batch mean LL: -9.373606073068437, Test mean LL: -9.392769269539262
+INFO:root:24000. Batch mean LL: -9.373213133718613, Test mean LL: -9.392582931500225
+INFO:root:24500. Batch mean LL: -9.372765733809564, Test mean LL: -9.392343521063347
+INFO:root:25000. Batch mean LL: -9.372460217774368, Test mean LL: -9.392207668639967
+INFO:root:25500. Batch mean LL: -9.372131943998529, Test mean LL: -9.392100008647457
+INFO:root:26000. Batch mean LL: -9.371905462451757, Test mean LL: -9.392130166896298
+INFO:root:26500. Batch mean LL: -9.37172325194411, Test mean LL: -9.392049308719683
+INFO:root:27000. Batch mean LL: -9.371608271744845, Test mean LL: -9.39205411669014
+INFO:root:27500. Batch mean LL: -9.37150458376531, Test mean LL: -9.392038647036012
+INFO:root:28000. Batch mean LL: -9.371393778142654, Test mean LL: -9.392003470505921
+INFO:root:28500. Batch mean LL: -9.371325177073926, Test mean LL: -9.392027209134884
+INFO:root:29000. Batch mean LL: -9.371275892331418, Test mean LL: -9.392041113427133
+INFO:root:29500. Batch mean LL: -9.371183131177709, Test mean LL: -9.392063328955128
+INFO:root:30000. Batch mean LL: -9.371142464716606, Test mean LL: -9.392154845219759
+INFO:root:30500. Batch mean LL: -9.371133066502406, Test mean LL: -9.39222636361757
+INFO:root:31000. Batch mean LL: -9.37109225944938, Test mean LL: -9.392272710908767
+INFO:root:31500. Batch mean LL: -9.37108464604369, Test mean LL: -9.392352109976246
+INFO:root:32000. Batch mean LL: -9.371092048637427, Test mean LL: -9.392478384333307
+INFO:root:32500. Batch mean LL: -9.371101255123227, Test mean LL: -9.392575604101078
+INFO:root:33000. Batch mean LL: -9.37107651702287, Test mean LL: -9.39268799583356
+INFO:root:33500. Batch mean LL: -9.37114566993875, Test mean LL: -9.392853058988017
+INFO:root:34000. Batch mean LL: -9.37118001037648, Test mean LL: -9.393040905378973
+INFO:root:34500. Batch mean LL: -9.371179239700549, Test mean LL: -9.39314959367366
+INFO:root:35000. Batch mean LL: -9.371225125075528, Test mean LL: -9.393227332701105
+INFO:root:35500. Batch mean LL: -9.371313761379781, Test mean LL: -9.393412891372932
+INFO:root:36000. Batch mean LL: -9.37135144210848, Test mean LL: -9.393567264113244
+INFO:root:36500. Batch mean LL: -9.37144731686617, Test mean LL: -9.393747996856503
+INFO:root:37000. Batch mean LL: -9.37151190687672, Test mean LL: -9.393949889454241
+INFO:root:37500. Batch mean LL: -9.371632371320352, Test mean LL: -9.39418157350413
+INFO:root:38000. Batch mean LL: -9.371730378031106, Test mean LL: -9.394338876566472
+INFO:root:38500. Batch mean LL: -9.37183091306766, Test mean LL: -9.394508091438835
+INFO:root:39000. Batch mean LL: -9.371933153930131, Test mean LL: -9.394669567127005
+INFO:root:39500. Batch mean LL: -9.371986097791511, Test mean LL: -9.394744693219492
+INFO:root:40000. Batch mean LL: -9.372033716835096, Test mean LL: -9.39484452868394
+INFO:root:40500. Batch mean LL: -9.372083291231473, Test mean LL: -9.394930083782551
+INFO:root:41000. Batch mean LL: -9.372137660445992, Test mean LL: -9.39504919867135
+INFO:root:41500. Batch mean LL: -9.372201468854978, Test mean LL: -9.39514656375653
+INFO:root:42000. Batch mean LL: -9.37228233682478, Test mean LL: -9.39528932521742
+INFO:root:42500. Batch mean LL: -9.372334235148886, Test mean LL: -9.395424078656939
+INFO:root:43000. Batch mean LL: -9.372410619404853, Test mean LL: -9.395526633525204
+INFO:root:43500. Batch mean LL: -9.372489325632344, Test mean LL: -9.3956432413149
+INFO:root:44000. Batch mean LL: -9.37255676555766, Test mean LL: -9.395751822943987
+INFO:root:44500. Batch mean LL: -9.372653513491237, Test mean LL: -9.395863267344293
+INFO:root:
+
+
+
+INFO:root:Learning Rate: 0.6
+INFO:root:Window Size: 4
+INFO:root:Batch Size: 50
+INFO:root:Number of iterations: 45000
+INFO:root:Vectors size: 150
+INFO:root:number of negative sampling words: 10
+INFO:root:decay iterations each 13000 steps
+INFO:root:Noise distribution alpha
+INFO:root:Training Time: 17579.856402635574, 
+Final Train LL: -9.372653513491237, 
+Final Test LL: -9.395863267344293, 
+
+
+INFO:root:
+
+
+Context words from input word:
+INFO:root:Top 10 Conetxt words for the input word "good" are: ['can', 'this', 'that', 'not', 'but', 'more', 'movie', 'for', 'one', 'good']
+INFO:root:Top 10 Conetxt words for the input word "bad" are: ['too', 'you', 'there', 'for', 'just', 'even', 'film', 'like', 'movie', 'can']
+INFO:root:Top 10 Conetxt words for the input word "lame" are: ['borg', 'workable', 'breathtakingly', 'jacques', 'delves', 'disservice', 'penn', 'ziyi', 'foo', 'loss']
+INFO:root:Top 10 Conetxt words for the input word "cool" are: ['find', 'itself', 'comes', 'ultimately', 'these', 'whole', 'american', 'manages', 'enjoy', 'past']
+INFO:root:Top 10 Conetxt words for the input word "exciting" are: ['nothing', 'something', 'full', 'short', 'character', 'had', 'might', 'documentary', 'then', 'home']
+INFO:root:
+
+
+
+INFO:root:Input word from context words:
+INFO:root:The 10 best competition for the sentence "The movie was surprisingly ______" are:['you', 'but', 'that', 'are', 'does', 'have', 'not', 'this', 'for', 'movie']
+INFO:root:The 10 best competition for the sentence "______ was really disappointing" are:['just', 'very', 'one', 'movie', 'been', 'about', 'films', 'but', 'feel', 'much']
+INFO:root:The 10 best competition for the sentence "Knowing that she _____ was the best part" are:['film', 'you', 'for', 'that', 'this', 'and', 'movie', 'more', 'but', 'about']
+INFO:root:
+
+
+
+INFO:root:Best Analogies using input embeddings:
+INFO:root:The 10 best suggestions for "man is to woman as men is to___": ['end', 'one', 'all', 'that', 'kind', 'once', 'drama', 'character', 'films', 'woman']
+INFO:root:The 10 best suggestions for "good is to great as bad is to___": ['all', 'there', 'has', 'most', 'one', 'are', 'will', 'too', 'good', 'great']
+INFO:root:The 10 best suggestions for "warm is to cold as summer is to___": ['bitten', 'applied', 'might', 'flattened', 'poetry', 'under', 'deeply', 'taps', 'cold', 'warm']
+INFO:root:Same Analogies using context embeddings:
+INFO:root:The 10 best suggestions for "man is to woman as men is to___": ['hard', 'funny', 'out', 'her', 'how', 'see', 'other', 'will', 'big', 'woman']
+INFO:root:The 10 best suggestions for "good is to great as bad is to___": ['movie', 'with', 'very', 'one', 'about', 'most', 'are', 'has', 'good', 'great']
+INFO:root:The 10 best suggestions for "warm is to cold as summer is to___": ['funny', 'also', 'flick', 'family', 'material', 'romantic', 'sometimes', 'whose', 'cold', 'warm']

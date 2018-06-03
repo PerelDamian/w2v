@@ -43,10 +43,8 @@ if __name__ == "__main__":
 
     fn = logs_dir + '/' + "training_ll" + '.log'
     logging.basicConfig(filename=fn, level=logging.INFO)
-    # logging.basicConfig(filename=logs_dir + '/' + 'final_log.log', level=logging.INFO)
 
-    # Save final scores to file
-
+    # print parameters and final scores to file
     logging.info('\n\n\n')
     logging.info('Learning Rate: {}'.format(args.lr))
     logging.info('Window Size: {}'.format(args.window_size))
@@ -55,37 +53,10 @@ if __name__ == "__main__":
     logging.info('Vectors size: {}'.format(args.vectors_size))
     logging.info('number of negative sampling words: {}'.format(args.n_negative_words))
     logging.info('decay iterations each {} steps'.format(args.lr_ietrations_decay))
-    logging.info('Noise distribution alpha'.format(args.noise_dist_alpha))
-
-    logging.info('Training Time: {}, \nFinal Train LL: {}, \nFinal Test LL: {}, \n\n'.format(model.training_scores['training_time'],
+    logging.info('Noise distribution alpha: {}'.format(args.noise_dist_alpha))
+    logging.info('Training Time: {} minutes, \nFinal Train LL: {}, \nFinal Test LL: {}, \n\n'.format(model.training_scores['training_time'],
                                                                                              model.training_scores['train_ll'][-1],
                                                                                              model.training_scores['test_ll'][-1]))
-
-    logging.info('\n\n\nContext words from input word:')
-    logging.info('Top 10 Conetxt words for the input word "good" are: ' + str(evaluation.most_likely_cotext_words(model, 'good', 10)))
-    logging.info('Top 10 Conetxt words for the input word "bad" are: ' + str(evaluation.most_likely_cotext_words(model, 'bad', 10)))
-    logging.info('Top 10 Conetxt words for the input word "lame" are: ' + str(evaluation.most_likely_cotext_words(model, 'lame', 10)))
-    logging.info('Top 10 Conetxt words for the input word "cool" are: ' + str(evaluation.most_likely_cotext_words(model, 'cool', 10)))
-    logging.info('Top 10 Conetxt words for the input word "exciting" are: ' + str(evaluation.most_likely_cotext_words(model, 'exciting', 10)))
-    logging.info('\n\n\n')
-
-    logging.info('Input word from context words:')
-    logging.info('The 10 best competition for the sentence "The movie was surprisingly ______" are:' +
-                 str(evaluation.most_likely_input_words(model, ['the', 'movie', 'was', 'surprisingly'], 10)))
-    logging.info('The 10 best competition for the sentence "______ was really disappointing" are:' +
-                 str(evaluation.most_likely_input_words(model, ['was', 'really', 'disappointing'], 10)))
-    logging.info('The 10 best competition for the sentence "Knowing that she _____ was the best part" are:' +
-                 str(evaluation.most_likely_input_words(model, ['knowing', 'that', 'she', 'was', 'the', 'best', 'part'], 10)))
-    logging.info('\n\n\n')
-
-    logging.info('Best Analogies using input embeddings:')
-    logging.info('The 10 best suggestions for "man is to woman as men is to___": ' + str(evaluation.top_k_analogy_solver(model, 'man', 'woman', 'man', 10)))
-    logging.info('The 10 best suggestions for "good is to great as bad is to___": ' + str(evaluation.top_k_analogy_solver(model, 'good', 'great', 'bad', 10)))
-    logging.info('The 10 best suggestions for "warm is to cold as summer is to___": ' + str(evaluation.top_k_analogy_solver(model, 'warm', 'cold', 'summer', 10)))
-    logging.info('Same Analogies using context embeddings:')
-    logging.info('The 10 best suggestions for "man is to woman as men is to___": ' + str(evaluation.top_k_analogy_solver(model, 'man', 'woman', 'man', 10, 'context')))
-    logging.info('The 10 best suggestions for "good is to great as bad is to___": ' + str(evaluation.top_k_analogy_solver(model, 'good', 'great', 'bad', 10, 'context')))
-    logging.info('The 10 best suggestions for "warm is to cold as summer is to___": ' + str(evaluation.top_k_analogy_solver(model, 'warm', 'cold', 'summer', 10, 'context')))
 
     # Deliverable 1 - save plot of ll of train and test as function of iteration
     plt.figure()
@@ -96,3 +67,33 @@ if __name__ == "__main__":
     plt.ylabel('Mean LL')
     plt.legend(loc='best')
     plt.savefig(logs_dir + '/' + 'Train_plot.png')
+
+    # Deliverabel 2 and are calculated seperately after running this script with different values
+
+    # Deliverable 4
+    logging.info('\n\n\nContext words from input word:')
+    logging.info('Top 10 Conetxt words for the input word "good" are: ' + str(evaluation.most_likely_cotext_words(model, 'good', 10)))
+    logging.info('Top 10 Conetxt words for the input word "bad" are: ' + str(evaluation.most_likely_cotext_words(model, 'bad', 10)))
+    logging.info('Top 10 Conetxt words for the input word "lame" are: ' + str(evaluation.most_likely_cotext_words(model, 'lame', 10)))
+    logging.info('Top 10 Conetxt words for the input word "cool" are: ' + str(evaluation.most_likely_cotext_words(model, 'cool', 10)))
+    logging.info('Top 10 Conetxt words for the input word "exciting" are: ' + str(evaluation.most_likely_cotext_words(model, 'exciting', 10)))
+
+    # Deliverable 5
+    logging.info('\n\n\nInput word from context words:')
+    logging.info('The 10 best competition for the sentence "The movie was surprisingly ______" are:' +
+                 str(evaluation.most_likely_input_words(model, ['the', 'movie', 'was', 'surprisingly'], 10)))
+    logging.info('The 10 best competition for the sentence "______ was really disappointing" are:' +
+                 str(evaluation.most_likely_input_words(model, ['was', 'really', 'disappointing'], 10)))
+    logging.info('The 10 best competition for the sentence "Knowing that she _____ was the best part" are:' +
+                 str(evaluation.most_likely_input_words(model, ['knowing', 'that', 'she', 'was', 'the', 'best', 'part'], 10)))
+
+    # Deliverable 6
+    logging.info('\n\n\nBest Analogies using input embeddings:')
+    logging.info('The 10 best suggestions for "man is to woman as men is to___": ' + str(evaluation.top_k_analogy_solver(model, 'man', 'woman', 'man', 10)))
+    logging.info('The 10 best suggestions for "good is to great as bad is to___": ' + str(evaluation.top_k_analogy_solver(model, 'good', 'great', 'bad', 10)))
+    logging.info('The 10 best suggestions for "warm is to cold as summer is to___": ' + str(evaluation.top_k_analogy_solver(model, 'warm', 'cold', 'summer', 10)))
+    logging.info('Same Analogies using context embeddings:')
+    logging.info('The 10 best suggestions for "man is to woman as men is to___": ' + str(evaluation.top_k_analogy_solver(model, 'man', 'woman', 'man', 10, 'context')))
+    logging.info('The 10 best suggestions for "good is to great as bad is to___": ' + str(evaluation.top_k_analogy_solver(model, 'good', 'great', 'bad', 10, 'context')))
+    logging.info('The 10 best suggestions for "warm is to cold as summer is to___": ' + str(evaluation.top_k_analogy_solver(model, 'warm', 'cold', 'summer', 10, 'context')))
+
