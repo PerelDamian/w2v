@@ -41,6 +41,11 @@ if __name__ == "__main__":
 
     model.LearnParamsUsingSGD(sgd_params, logs_dir=logs_dir, use_test=True)
 
+
+    ##############################################################
+    ######### print deliverables to log file #####################
+    ##############################################################
+
     fn = logs_dir + '/' + "training_ll" + '.log'
     logging.basicConfig(filename=fn, level=logging.INFO)
 
