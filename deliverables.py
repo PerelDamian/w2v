@@ -44,7 +44,7 @@ if __name__ == '__main__':
     d = [10, 75, 150, 225, 300]
     deliverable_2(d, variablle_d_lls, variable_d_training_times)
 
-    varable_lr_lls = [-8.864296363903897, -8.965983876187982, -9.14743160137451, -9.199273701250165]
-    variable_lr_training_times = [5568, 5555, 5584, 5600]
-    lrs = [3, 2, 1, 0.8]
+    varable_lr_lls = [-8.777760601665326, -8.814701232499674, -8.864296363903897, -8.965983876187982, -9.14743160137451, -9.199273701250165]
+    variable_lr_training_times = [5563, 5561, 5568, 5555, 5584, 5600]
+    lrs = [5, 4, 3, 2, 1, 0.8]
     deliverable_3(lrs, varable_lr_lls, variable_lr_training_times)
