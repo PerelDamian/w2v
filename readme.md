@@ -1,4 +1,4 @@
-Word Embedding using skip gram and negative samplign
+Word Embedding using skip gram and negative sampling
 
 In order to train a model you should run the main.py file with the following flags and args:
 
