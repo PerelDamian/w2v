@@ -1,0 +1,84 @@
+INFO:root:0. Batch mean LL: -9.875598523353606, Test mean LL: -9.865091978216965
+INFO:root:500. Batch mean LL: -9.857588247777064, Test mean LL: -9.859288825301507
+INFO:root:1000. Batch mean LL: -9.849877394959407, Test mean LL: -9.856996833972385
+INFO:root:1500. Batch mean LL: -9.839623530864241, Test mean LL: -9.85196209248273
+INFO:root:2000. Batch mean LL: -9.829381133764343, Test mean LL: -9.84288392782384
+INFO:root:2500. Batch mean LL: -9.822356644524966, Test mean LL: -9.83596447833457
+INFO:root:3000. Batch mean LL: -9.810857374545781, Test mean LL: -9.827839415068397
+INFO:root:3500. Batch mean LL: -9.802774619974292, Test mean LL: -9.820935123548095
+INFO:root:4000. Batch mean LL: -9.792664442159818, Test mean LL: -9.811847499670707
+INFO:root:4500. Batch mean LL: -9.781388321046531, Test mean LL: -9.803030446280799
+INFO:root:5000. Batch mean LL: -9.772438872743255, Test mean LL: -9.794963555984149
+INFO:root:5500. Batch mean LL: -9.761056602421176, Test mean LL: -9.785875576329097
+INFO:root:6000. Batch mean LL: -9.751069315980883, Test mean LL: -9.77761592451492
+INFO:root:6500. Batch mean LL: -9.741394662263465, Test mean LL: -9.770115393103799
+INFO:root:7000. Batch mean LL: -9.732813032331716, Test mean LL: -9.76132779743015
+INFO:root:7500. Batch mean LL: -9.722382806504019, Test mean LL: -9.754373113836344
+INFO:root:8000. Batch mean LL: -9.713386762985845, Test mean LL: -9.745182882581497
+INFO:root:8500. Batch mean LL: -9.703195277931917, Test mean LL: -9.737808112574083
+INFO:root:9000. Batch mean LL: -9.694187284974703, Test mean LL: -9.729569978771554
+INFO:root:9500. Batch mean LL: -9.685447155556963, Test mean LL: -9.723679331070132
+INFO:root:10000. Batch mean LL: -9.677367087521306, Test mean LL: -9.71560702187302
+INFO:root:10500. Batch mean LL: -9.668541109689734, Test mean LL: -9.706931321289339
+INFO:root:11000. Batch mean LL: -9.659510979987223, Test mean LL: -9.698141123454487
+INFO:root:11500. Batch mean LL: -9.651294162049355, Test mean LL: -9.691575675176697
+INFO:root:12000. Batch mean LL: -9.643551227932983, Test mean LL: -9.68291175634076
+INFO:root:12500. Batch mean LL: -9.636686328092326, Test mean LL: -9.675677802733555
+INFO:root:13000. Batch mean LL: -9.630157484704341, Test mean LL: -9.668466192756163
+INFO:root:13500. Batch mean LL: -9.622560505087396, Test mean LL: -9.661759078472762
+INFO:root:14000. Batch mean LL: -9.615267684854754, Test mean LL: -9.655057353096923
+INFO:root:14500. Batch mean LL: -9.608433636203328, Test mean LL: -9.648407988680212
+INFO:root:15000. Batch mean LL: -9.601951249722909, Test mean LL: -9.642722449804248
+INFO:root:15500. Batch mean LL: -9.595773477745164, Test mean LL: -9.635529286590252
+INFO:root:16000. Batch mean LL: -9.58976308644167, Test mean LL: -9.630307437633627
+INFO:root:16500. Batch mean LL: -9.583363261334192, Test mean LL: -9.625397395061182
+INFO:root:17000. Batch mean LL: -9.578167063954997, Test mean LL: -9.619306573517736
+INFO:root:17500. Batch mean LL: -9.571211412414414, Test mean LL: -9.613792302540753
+INFO:root:18000. Batch mean LL: -9.565385330240339, Test mean LL: -9.607770132366095
+INFO:root:18500. Batch mean LL: -9.55998956405313, Test mean LL: -9.602696272702397
+INFO:root:19000. Batch mean LL: -9.555277323587346, Test mean LL: -9.597223975377274
+INFO:root:19500. Batch mean LL: -9.549587300159606, Test mean LL: -9.592545192719188
+INFO:root:
+
+
+
+INFO:root:Learning Rate: 0.8
+INFO:root:Window Size: 4
+INFO:root:Batch Size: 50
+INFO:root:Number of iterations: 20000
+INFO:root:Vectors size: 2
+INFO:root:number of negative sampling words: 10
+INFO:root:decay iterations each 20000 steps
+INFO:root:Noise distribution alpha: 0.005
+INFO:root:Training Time: 5823.833278894424 minutes, 
+Final Train LL: -9.549587300159606, 
+Final Test LL: -9.592545192719188, 
+
+
+INFO:root:
+
+
+Context words from input word:
+INFO:root:Top 10 Conetxt words for the input word "good" are: ['brutal', 'trip', 'many', 'reynolds', 'lawrence', 'frightening', 'belong', 'juicy', 'amiss', 'activists']
+INFO:root:Top 10 Conetxt words for the input word "bad" are: ['runaway', 'discerned', 'mountains', 'secrets', 'comfortable', 'theme', 'chyna', 'lumpish', 'sharks', 'dean']
+INFO:root:Top 10 Conetxt words for the input word "lame" are: ['been', 'triumphant', 'creative', 'blood', 'that', 'from', 'praiseworthy', 'moldering', 'wesley', 'inquiry']
+INFO:root:Top 10 Conetxt words for the input word "cool" are: ['perspicacious', 'rip', 'transcendence', 'susan', 'dignity', 'fallible', 'coltish', 'aims', 'diver', 'salvage']
+INFO:root:Top 10 Conetxt words for the input word "exciting" are: ['haunts', 'effectively', 'won', 'slasher', 'teenage', 'urgently', 'banter', 'tweaked', 'disadvantage', 'ali']
+INFO:root:
+
+
+Input word from context words:
+INFO:root:The 10 best competition for the sentence "The movie was surprisingly ______" are:['prettiest', 'upon', 'finish', 'kidd', 'discordant', 'vexing', 'land', 'unique', 'barn', 'johnnie']
+INFO:root:The 10 best competition for the sentence "______ was really disappointing" are:['cooks', 'naipaul', 'constricted', 'lackadaisical', 'work', 'crazy', 'godfrey', 'adjusting', 'then', 'new']
+INFO:root:The 10 best competition for the sentence "Knowing that she _____ was the best part" are:['communications', 'waydowntown', 'leave', 'tabloids', 'also', 'myrtle', 'glitter', 'affecting', 'year', 'retreats']
+INFO:root:
+
+
+Best Analogies using input embeddings:
+INFO:root:The 10 best suggestions for "man is to woman as men is to___": ['woman', 'imitating', 'contrived', 'sports', 'bracing', 'desolate', 'afraid', 'spiffy', 'davies', 'submerging']
+INFO:root:The 10 best suggestions for "good is to great as bad is to___": ['subtitles', 'sidedness', 'crusty', 'satisfying', 'collateral', 'unturned', 'funniest', 'overview', 'entertainingly', 'implied']
+INFO:root:The 10 best suggestions for "warm is to cold as summer is to___": ['smallest', 'legacy', 'outweigh', 'dimness', 'dissecting', 'thornberry', 'hubristic', 'unwavering', 'plex', 'daytime']
+INFO:root:Same Analogies using context embeddings:
+INFO:root:The 10 best suggestions for "man is to woman as men is to___": ['woman', 'bombay', 'brothers', 'margins', 'verging', 'rote', 'win', 'gasps', 'consistency', 'plenty']
+INFO:root:The 10 best suggestions for "good is to great as bad is to___": ['one', 'imagined', 'brittle', 'aimlessly', 'makes', 'differently', 'donna', 'choquart', 'muddy', 'reef']
+INFO:root:The 10 best suggestions for "warm is to cold as summer is to___": ['flamboyant', 'labels', 'costs', 'allowing', 'late', 'uncles', 'upstaged', 'requiring', 'showcase', 'shekhar']

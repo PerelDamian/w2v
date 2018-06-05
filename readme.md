@@ -18,5 +18,5 @@ Each time the main.py is ran, a directory with all the logs and deliverables is 
 
 Deliverables which are created with scores of multiples models, can be created by running the deliverabels.py script with no args.
 
-Running bash diff_params.run.sh will create all needed model needed for the deliverables.
+Running bash diff_params_run.sh will create all needed models for the deliverables.
 
