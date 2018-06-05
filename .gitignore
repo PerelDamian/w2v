@@ -1,2 +1,11 @@
 venv/
+<<<<<<< HEAD
+.ipynb_checkpoints/
+nohup.out
+.idea/
+.chache*
+*~
+
+=======
 __pycache__/
+>>>>>>> bf941d88731760d21cb32365b68dca4282ff5ab7
