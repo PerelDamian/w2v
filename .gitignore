@@ -1,1 +1,7 @@
 venv/
+.ipynb_checkpoints/
+nohup.out
+.idea/
+.chache*
+*~
+
